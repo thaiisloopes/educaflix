@@ -3,11 +3,11 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 
 
-function PageDefault() {
+function PageDefault({ children }) {
 	return (
 		<div>
 			<Menu />
-
+				{children}
 			<Footer />
 		</div>
 	);
