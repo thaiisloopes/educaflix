@@ -33,6 +33,8 @@ function Home() {
             category={dadosIniciais.categorias[3]}
         />
 
+        <Footer />
+
     	// FALTA O FOOTER
     </div>
   );
