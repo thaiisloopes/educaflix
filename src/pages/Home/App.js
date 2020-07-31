@@ -34,8 +34,6 @@ function Home() {
         />
 
         <Footer />
-
-    	// FALTA O FOOTER
     </div>
   );
 }
