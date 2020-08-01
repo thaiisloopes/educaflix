@@ -11,7 +11,15 @@ function CadastroCategoria() {
 		<PageDefault>
 			<h1>Cadastro de Categoria: {nomeDaCategoria} </h1>
 
-			<form>
+			<form onSubmit={function hadleSubmit(infosDoEvento) {
+				infosDoEvento.preventDefault();
+				console.log('enviar form')
+				setCategorias([
+					...categorias,
+					nomeDaCategoria
+				]);
+
+			}}>
 				<label>
 					Nome da Categoria:
 					<input 
@@ -29,9 +37,9 @@ function CadastroCategoria() {
 			</form>
 
 			<ul>
-				{categorias.map((categoria) => {
+				{categorias.map((categoria, indice) => {
 					return (
-						<li>
+						<li key={`${categoria}${indice}`}>
 							{categoria}
 						</li>
 					)
