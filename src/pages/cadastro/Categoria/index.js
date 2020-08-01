@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function CadastroCategoria() {
+	const [categorias, setCategorias] = useState(['Teste']);
 	const [nomeDaCategoria, setNomeDaCategoria] = useState('Valor inicial');
 
 	return (
@@ -26,6 +27,18 @@ function CadastroCategoria() {
 					Cadastrar
 				</button>	
 			</form>
+
+			<ul>
+				{categorias.map((categoria) => {
+					return (
+						<li>
+							{categoria}
+						</li>
+					)
+
+				})}
+
+			</ul>
 
 			<Link to="/">
 				Ir para home
