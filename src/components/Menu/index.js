@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/thaflix-logo.png'
+import Logo from '../../assets/img/educaflix-logo.png'
 import './Menu.css';
 import Button from '../Button';
 
