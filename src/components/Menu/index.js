@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/Logo.png'
+import Logo from '../../assets/img/thaflix-logo.png'
 import './Menu.css';
-// import ButtonLink from '../ButtonLink'
 import Button from '../Button';
 
 function Menu() {
