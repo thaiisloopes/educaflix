@@ -31,7 +31,7 @@ function CadastroCategoria() {
 
 	useEffect(() => {
 		console.log('Hello World');
-		const URL = 'http://localhost:8080/categorias';
+		const URL = 'https://educaflix-app.herokuapp.com/categorias';
 		fetch(URL)
 			.then(async (respostaDoServidor) => {
 				const resposta = await respostaDoServidor.json();
