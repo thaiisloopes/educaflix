@@ -29,6 +29,18 @@ function CadastroCategoria() {
 		);
 	}	
 
+	useEffect(() => {
+		console.log('Hello World');
+		const URL = 'http://localhost:8080/categorias';
+		fetch(URL)
+			.then(async (respostaDoServidor) => {
+				const resposta = await respostaDoServidor.json();
+				setCategorias([
+					...resposta,
+				]);
+			});
+	}, []);
+
 	return (
 		<PageDefault>
 			<h1>Cadastro de Categoria: {valores.nome} </h1>
@@ -72,11 +84,18 @@ function CadastroCategoria() {
 				</Button>	
 			</form>
 
+			{categorias.lenght === 0 && (
+				<div>
+					{/* Cargando ... */ }
+					Loading...
+				</div>
+			)}
+
 			<ul>
 				{categorias.map((categoria, indice) => {
 					return (
 						<li key={`${categoria}${indice}`}>
-							{categoria.nome}
+							{categoria.titulo}
 						</li>
 					)
 
