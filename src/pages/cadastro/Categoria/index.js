@@ -32,7 +32,7 @@ function CadastroCategoria() {
 
 	return (
 		<PageDefault>
-			<h1>Cadastro de Categoria: {valores.nome} </h1>
+			<h1>Cadastro de Categoria: {valores.titulo} </h1>
 
 			<form onSubmit={function hadleSubmit(infosDoEvento) {
 				infosDoEvento.preventDefault();
@@ -47,8 +47,8 @@ function CadastroCategoria() {
 				<FormField
 					label="Nome da Categoria"
 					type="text"
-					name="nome"
-					value={valores.nome}
+					name="titulo"
+					value={valores.titulo}
 					onChange={funcaoHandler}
 				/>
 
