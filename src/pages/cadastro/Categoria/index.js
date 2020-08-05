@@ -4,19 +4,11 @@ import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button'
 
-
-function CadastroCategoria() {
-	const valoresIniciais = {
-		nome: '',
-		descricao: '',
-		cor: ''
-	}
-
-	const [categorias, setCategorias] = useState([]);
+function useForm(valoresIniciais) {
 	const [valores, setValores] = useState(valoresIniciais);
 
 	function setValor(chave, valor) {
-		setValores ({
+		setValores({
 			...valores,
 			[chave]: valor,
 		})
@@ -28,6 +20,29 @@ function CadastroCategoria() {
 			infosDoEvento.target.value
 		);
 	}	
+
+	function clearForm() {
+		setValores(valoresIniciais);
+	}
+
+	return {
+		valores,
+		funcaoHandler,
+		clearForm
+	};
+}
+
+
+function CadastroCategoria() {
+	const valoresIniciais = {
+		nome: '',
+		descricao: '',
+		cor: ''
+	}
+
+	const { valores, funcaoHandler, clearForm } = useForm(valoresIniciais)
+
+	const [categorias, setCategorias] = useState([]);
 
 	useEffect(() => {
 		console.log('Hello World');
@@ -55,7 +70,7 @@ function CadastroCategoria() {
 					valores
 				]);
 
-				setValores(valoresIniciais)
+				clearForm(valoresIniciais)
 			}}>
 				
 				<FormField
