@@ -31,9 +31,7 @@ function CadastroVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
 
-        const categoriaEscolhida = categorias.find((categoria) => {
-            return categoria.titulo === valores.categoria;
-        });
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === valores.categoria);
 
         videosRepository.create({
           titulo: valores.titulo,
@@ -64,6 +62,12 @@ function CadastroVideo() {
           name="categoria"
           value={valores.categoria}
           onChange={funcaoHandler}
+          suggestions={
+              [
+                'Front End',
+                'Back End',
+              ]
+          }
         />
 
         <Button type="submit">
