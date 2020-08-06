@@ -10,6 +10,7 @@ import categoriasRepository from '../../../repositories/categorias';
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { funcaoHandler, valores } = useForm({
     titulo: 'Vídeo padrão',
     url: 'https://www.youtube.com/watch?v=f8a-qwKC5yk',
@@ -62,12 +63,7 @@ function CadastroVideo() {
           name="categoria"
           value={valores.categoria}
           onChange={funcaoHandler}
-          suggestions={
-              [
-                'Front End',
-                'Back End',
-              ]
-          }
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
