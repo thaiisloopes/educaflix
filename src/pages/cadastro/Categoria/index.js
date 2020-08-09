@@ -32,16 +32,17 @@ function CadastroCategoria() {
         {valores.titulo}
       </h1>
 
-      <form onSubmit={function hadleSubmit(infosDoEvento) {
-			  infosDoEvento.preventDefault();
-			  setCategorias([
-			    ...categorias,
-			    valores,
-			  ]);
+      <form onSubmit={(event) => {
+        event.preventDefault();
+
+        categoriasRepository.create({
+          'titulo': valores.titulo,
+          'descricao': valores.descricao,
+          'cor': valores.cor
+        })
 
 			  clearForm(valoresIniciais);
-      }}
-      >
+      }}>
 
         <FormField
           label="Nome da Categoria"

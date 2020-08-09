@@ -40,6 +40,17 @@
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
       }
+    },
+    {
+      "titulo": "Categoria A",
+      "descricao": "Categoria A",
+      "cor": "#17b021",
+      "id": 6
+    },
+    {
+      "descricao": "",
+      "cor": "",
+      "id": 7
     }
   ],
   "videos": [
