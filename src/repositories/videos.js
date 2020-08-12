@@ -20,6 +20,20 @@ function create(video) {
     });
 }
 
+function remove(video) {
+	return fetch(`${URL_VIDEOS}?_embed=videos`, {
+		method: 'DELETE'
+	})
+	  .then(async (respostaDoServidor) => {
+			 if (respostaDoServidor.ok) {
+			  const resposta = await respostaDoServidor.json();
+			  return resposta;
+		  }
+  
+		  throw new Error('Não foi possível excluir os dados :(');
+	  });
+  }
+
 export default {
-  create,
+  create, remove
 };

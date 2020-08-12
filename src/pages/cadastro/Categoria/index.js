@@ -88,9 +88,9 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Link to="/">
+      <Button as={Link} to="/">
         Ir para home
-      </Link>
+      </Button>
     </PageDefault>
   );
 }
