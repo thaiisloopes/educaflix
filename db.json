@@ -51,6 +51,12 @@
       "descricao": "",
       "cor": "",
       "id": 7
+    },
+    {
+      "titulo": "Categoria B",
+      "descricao": "Categoria B",
+      "cor": "#f05c5c",
+      "id": 8
     }
   ],
   "videos": [
@@ -269,6 +275,24 @@
       "url": "https://www.youtube.com/watch?v=UL9umPJ9auY",
       "categoriaId": 4,
       "id": 36
+    },
+    {
+      "titulo": "Mulheres negras e a Tecnologia",
+      "url": "https://www.youtube.com/watch?v=4UVEps8Waeg",
+      "categoriaId": 1,
+      "id": 37
+    },
+    {
+      "titulo": "Vídeo ABC",
+      "url": "https://www.youtube.com/watch?v=UL9umPJ9auY",
+      "categoriaId": 6,
+      "id": 38
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=4UVEps8Waeg",
+      "categoriaId": 8,
+      "id": 39
     }
   ]
 }
