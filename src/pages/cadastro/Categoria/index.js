@@ -87,6 +87,10 @@ function CadastroCategoria() {
           </li>
         ))}
       </ul>
+      
+      <Button as={Link} to="/categorias">
+        Todas Categorias
+      </Button>
 
       <Button as={Link} to="/">
         Ir para home
