@@ -4,7 +4,7 @@ import './index.css';
 import Home from './pages/Home/App.js';
 import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
-import LeituraCategorias from './pages/leitura/Categoria';
+import ListaCategorias from './pages/leitura/Categoria';
 
 import {
 	BrowserRouter,
@@ -19,7 +19,7 @@ ReactDOM.render(
   	<Switch>
   		<Route path="/cadastro/video" component={CadastroVideo} />
       	<Route path="/cadastro/categoria" component={CadastroCategoria} />
-      	<Route path="/categorias" component={LeituraCategorias} />
+      	<Route path="/categorias" component={ListaCategorias} />
   		<Route path="/" component={Home} exact />
   		<Route component={Pagina404} />
   	</Switch>	
