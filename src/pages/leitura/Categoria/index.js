@@ -25,6 +25,11 @@ function ListaCategorias() {
         {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>
             {categoria.titulo}
+            <br></br>
+            <Link to="/" onClick={categoriasRepository.remove(categoria.titulo)}>
+                Remover Categoria
+            </Link>
+            <hr></hr>
           </li>
         ))}
       </ul>

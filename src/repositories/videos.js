@@ -32,7 +32,7 @@ function remove(video) {
   
 		  throw new Error('Não foi possível excluir os dados :(');
 	  });
-  }
+}
 
 export default {
   create, remove

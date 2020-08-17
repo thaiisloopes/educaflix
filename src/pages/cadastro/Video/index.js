@@ -74,10 +74,6 @@ function CadastroVideo() {
       <Button as={Link} to="/cadastro/categoria">
         Cadastrar Categoria
       </Button>
-
-      <Button as={Link} to="/">
-        Remover Categoria
-      </Button>
     </PageDefault>
   );
 }

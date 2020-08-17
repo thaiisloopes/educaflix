@@ -44,6 +44,16 @@ function create(category) {
     });
 }
 
+function remove(category_id) {
+	return fetch(`${URL_CATEGORIES}/${category_id}`, {method: 'DELETE'})
+	  .then(res => res.json())
+	  .then(res => {
+		console.log('Deleted:', res.message)
+		return res
+	  })
+	  .catch(err => console.error(err))
+}
+
 export default {
-  getAllWithVideos, getAll, create,
+  getAllWithVideos, getAll, create, remove
 };
