@@ -29,11 +29,15 @@ function Home() {
         if (indice === 0) {
           return (
             <div key={categoria.id}>
-              <BannerMain
-                videoTitle={dadosIniciais[1].videos[0].titulo}
-                url={dadosIniciais[1].videos[0].url}
-                videoDescription="O que é Front-end? Trabalhando na área"
-              />
+              {
+                dadosIniciais[0].videos[0] && (
+                  <BannerMain
+                    videoTitle={dadosIniciais[0].videos[0].titulo}
+                    url={dadosIniciais[0].videos[0].url}
+                    videoDescription="O que é Front-end? Trabalhando na área"
+                  />
+                )
+              }
 
               <Carousel
                 ignoreFirstVideo
@@ -50,7 +54,6 @@ function Home() {
           />
         );
       })}
-      ;
 
     </PageDefault>
   );
