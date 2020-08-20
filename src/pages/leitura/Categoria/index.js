@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import Button from '../../../components/Button';
-import categoriasRepository from '../../../repositories/categorias';
+import categoriasRepository from '../../../repositories/Categoria/categorias';
 
 function ListaCategorias() {
   const [categorias, setCategorias] = useState([]);

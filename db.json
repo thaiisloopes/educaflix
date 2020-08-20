@@ -1,16 +1,10 @@
 {
   "categorias": [
     {
-      "titulo": "Cat B",
-      "descricao": "B",
-      "cor": "#e01f1f",
-      "id": 2
-    },
-    {
-      "titulo": "Cat C",
-      "descricao": "c",
-      "cor": "#471d72",
-      "id": 3
+      "titulo": "Categoria A",
+      "descricao": "Categoria A",
+      "cor": "",
+      "id": 1
     }
   ],
   "videos": [
@@ -19,6 +13,12 @@
       "url": "https://www.youtube.com/watch?v=f8a-qwKC5yk",
       "categoria": 1,
       "id": 25
+    },
+    {
+      "titulo": "New Video",
+      "url": "https://www.youtube.com/watch?v=4UVEps8Waeg",
+      "categoriaId": 1,
+      "id": 26
     }
   ]
 }

@@ -1,6 +1,18 @@
-import config from '../config';
+import config from '../../config';
 
 const URL_VIDEOS = `${config.URL_BACKEND}/videos`;
+
+function getAll() {
+	return fetch(`${URL_VIDEOS}`)
+	  .then(async (respostaDoServidor) => {
+		if (respostaDoServidor.ok) {
+		  const resposta = await respostaDoServidor.json();
+		  return resposta;
+		}
+  
+		throw new Error('Não foi possível pegar os dados :(');
+	  });
+  }
 
 function create(video) {
   return fetch(`${URL_VIDEOS}?_embed=videos`, {
@@ -35,5 +47,5 @@ function remove(video) {
 }
 
 export default {
-  create, remove
+  create, remove, getAll
 };

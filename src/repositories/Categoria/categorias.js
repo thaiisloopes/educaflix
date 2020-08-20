@@ -1,4 +1,4 @@
-import config from '../config';
+import config from '../../config';
 
 const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
 

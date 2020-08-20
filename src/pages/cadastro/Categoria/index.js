@@ -4,7 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
-import categoriasRepository from '../../../repositories/categorias';
+import categoriasRepository from '../../../repositories/Categoria/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {

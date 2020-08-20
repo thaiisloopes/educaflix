@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
-import categoriasRepository from '../../repositories/categorias';
+import categoriasRepository from '../../repositories/Categoria/categorias';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
