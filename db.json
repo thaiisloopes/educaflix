@@ -9,12 +9,6 @@
   ],
   "videos": [
     {
-      "titulo": "Vídeo padrão",
-      "url": "https://www.youtube.com/watch?v=f8a-qwKC5yk",
-      "categoria": 1,
-      "id": 25
-    },
-    {
       "titulo": "New Video",
       "url": "https://www.youtube.com/watch?v=4UVEps8Waeg",
       "categoriaId": 1,
