@@ -33,6 +33,10 @@ function CadastroVideo() {
         event.preventDefault();
 
         const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === valores.categoria);
+        
+        if(!categoriaEscolhida) {
+          return alert("Categoria Não Existe");
+        }
 
         videosRepository.create({
           titulo: valores.titulo,

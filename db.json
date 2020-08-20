@@ -1,18 +1,4 @@
 {
-  "categorias": [
-    {
-      "titulo": "Categoria A",
-      "descricao": "Categoria A",
-      "cor": "",
-      "id": 1
-    }
-  ],
-  "videos": [
-    {
-      "titulo": "New Video",
-      "url": "https://www.youtube.com/watch?v=4UVEps8Waeg",
-      "categoriaId": 1,
-      "id": 26
-    }
-  ]
+  "categorias": [],
+  "videos": []
 }
