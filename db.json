@@ -1,5 +1,18 @@
 {
-  "categorias": [],
+  "categorias": [
+    {
+      "titulo": "Cat B",
+      "descricao": "B",
+      "cor": "#e01f1f",
+      "id": 2
+    },
+    {
+      "titulo": "Cat C",
+      "descricao": "c",
+      "cor": "#471d72",
+      "id": 3
+    }
+  ],
   "videos": [
     {
       "titulo": "Vídeo padrão",

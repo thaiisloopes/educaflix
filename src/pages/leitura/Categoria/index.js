@@ -26,7 +26,7 @@ function ListaCategorias() {
           <li key={`${categoria.titulo}`}>
             {categoria.titulo}
             <br></br>
-            <Link to="/" onclick={categoriasRepository.remove(categoria.id)}>
+            <Link to="/" onClick={() => categoriasRepository.remove(categoria.id)}>
                 Remover Categoria
             </Link>
             <hr></hr>
