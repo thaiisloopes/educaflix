@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -14,16 +14,6 @@ function CadastroCategoria() {
   };
 
   const { valores, funcaoHandler, clearForm } = useForm(valoresIniciais);
-
-  const [categorias, setCategorias] = useState([]);
-
-  useEffect(() => {
-    categoriasRepository
-      .getAll()
-      .then((categorias) => {
-        setCategorias(categorias);
-      });
-  }, []);
 
   return (
     <PageDefault>
@@ -72,22 +62,7 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
-
-      {categorias.length === 0 && (
-      <div>
-        {/* Cargando ... */ }
-        Loading...
-      </div>
-      )}
-
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
-      
+     
       <Button as={Link} to="/categorias">
         Todas Categorias
       </Button>
