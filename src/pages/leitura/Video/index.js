@@ -39,7 +39,7 @@ function ListaVideos() {
       </Button>
 
       <Button as={Link} to="/">
-        Ir para home
+        Home
       </Button>
     </PageDefault>
   );

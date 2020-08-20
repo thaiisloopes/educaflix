@@ -71,12 +71,16 @@ function CadastroVideo() {
         </Button>
       </form>
 
+      <Button as={Link} to="/videos">
+        Todos Vídeos
+      </Button>
+
       <Button as={Link} to="/cadastro/categoria">
         Cadastrar Categoria
       </Button>
 
       <Button as={Link} to="/">
-        Ir para home
+        Home
       </Button>
     </PageDefault>
   );
