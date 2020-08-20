@@ -1,17 +1,4 @@
 {
-  "categorias": [
-    {
-      "titulo": "Cat A",
-      "descricao": "Cat A",
-      "cor": "",
-      "id": 1
-    },
-    {
-      "titulo": "Cat B",
-      "descricao": "Cat B",
-      "cor": "#b62b2b",
-      "id": 2
-    }
-  ],
+  "categorias": [],
   "videos": []
 }
